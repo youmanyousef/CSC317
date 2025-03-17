@@ -1,0 +1,3 @@
+# Can you make a CSS stylesheet for this web portfolio home page? I want to use a specific style. Use a primary and secondary coloring theme, primary being  #36502c, secondary being #b2db34. Use the Verdana font, with serif as a backup. Also keep the sections in their separate space, and make sure the layout is responsive for mobile devices as well. Make sure the footer text is visible, that the color the text uses is not the same as the background. Use the image as a reference design.
+
+![image for layout idea](layout-idea.jpg "layout")
