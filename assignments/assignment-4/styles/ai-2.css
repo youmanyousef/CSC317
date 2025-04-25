@@ -1,0 +1,89 @@
+/*
+ Author: Joseph Altareb
+*/
+
+/*
+Can you make a CSS stylesheet for this web portfolio home page? I want to use a specific style. Use a primary and secondary coloring theme, primary being  #36502c, secondary being #b2db34. Use the Verdana font, with serif as a backup. Also keep the sections in their separate space, and make sure the layout is responsive for mobile devices as well. Make sure the footer text is visible, that the color the text uses is not the same as the background. Use the image as a reference design.
+*/
+
+/* General Styles */
+body {
+    font-family: Verdana, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #36502c;
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #b2db34;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #36502c;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #36502c;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header img {
+        width: 50%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+}

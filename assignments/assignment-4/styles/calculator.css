@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
 body {
 	background-color:var(--primary-color);
 	color: var(--text-color);

@@ -1,0 +1,70 @@
+/*
+ Author: Joseph Altareb
+*/
+
+/* 1. Global Styles & Variables */
+:root {
+    --primary-color: #36502c;
+    --secondary-color: #b2db34 ;
+    --text-color: #111;
+    --spacing-unit: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Typography */
+body {
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-unit);
+}
+
+/* 3. Layout & Navigation */
+header {
+    text-align: center;
+    padding: calc(var(--spacing-unit) * 2);
+    background-color: var(--primary-color);
+    color: white;
+}
+/* ai-2.css */
+header img {
+    border-radius: 50%;
+    margin: 10px;
+}
+nav {
+    background-color: var(--secondary-color);
+    padding: var(--spacing-unit);
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    gap: var(--spacing-unit);
+    
+}
+nav li {
+	list-style: none;
+    padding: 0;
+}
+
+/* 4. Sections */
+section {
+    padding: calc(var(--spacing-unit) * 2);
+    margin: var(--spacing-unit) 0;
+}
+
+/* 5. Footer */
+footer {
+	background-color: var(--primary-color);
+    color: white;
+}

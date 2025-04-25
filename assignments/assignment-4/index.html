@@ -1,18 +1,89 @@
+<!--
+ Author: Joseph Altareb
+-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>JavaScript Practice</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Personal portfolio of Joseph Altareb">
+	<meta name="keywords" content="portfolio, web development, student">
+	<title>Joseph Altareb's Portfolio</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/hybrid.css">
 </head>
 <body>
-	<h1>JavaScript Week 0 Practice</h1>
-	<button id="greetButton">Click Me!</button>
-	<div id="output"></div>
+	<header>
+		<h1>Joseph Altareb</h1>
+		<img src="images/jaltarebimg.jpg" alt="Portrait of Joseph Altareb" style="width:30%">
+	</header>
+	<nav>
+		<ul>
+			<li><a>Bio</a></li>
+			<li><a>Education</a></li>
+			<li><a>Experience</a></li>
+		</ul>      
+	</nav>
 	
-	<script src="scripts/hello.js"></script>
-	<script>
-		document.getElementById("greetButton").addEventListener("click", function() {
-			document.getElementById("output").textContent = createMessage("JavaScript");
-		});
-	</script>
+	<main>
+		<!-- finish bio -->
+		<!-- add embeded content -->
+		<!--img src="images/sfsulogo.jpg" alt="San Francisco State University's Logo" style="height:200px;left:50%"-->
+		<section id="bio">
+			<h2>Biography</h2>
+			<p>
+			Hello, my name is Joseph Altareb. This is my bio section for my portfolio. <br>
+			I am currently taking the CSC317 "Web Development" @ SFSU and this website is an ongoing project I am working on while studying for this class. 
+			</p>
+		</section>
+	
+		<section id="education">
+			<h2>Education</h2>
+			<ul>
+				<li>San Francisco State University - 2023-Present</li>
+				<li>Laney College - 2021-2023</li>
+			</ul>
+		</section>
+		
+		<section id="projects">
+			<h2>Ongoing Projects</h2>
+			<ul>
+				<li>JavaScript Calculator<br>
+					<img src="images/calculator-preview.jpg" alt="JS Calculator" style="width:100%"><br>
+					<span>Working Javascript calculator that uses vanilla JS to grab inputs from buttons on a grid and keyboard.</span>
+					<a href="./calculator.html">Link to project</a>
+				</li>
+			</ul>
+		</section>
+		
+		<section id="experience">
+			<h2>Experience</h2>
+			<ol>
+				<li>GroupWork - Social Networking App - "Best First Hack 2022 BeeLikeCoders"</li>
+				<li>TBD</li>
+			</ol>
+			<table>
+				<tr>
+					<th>Position</th>
+					<th>Company</th>
+					<th>Dates</th>
+				</tr>
+				<tr>
+					<td>TBD</td>
+					<td>TBD</td>
+					<td>TBD</td>
+				</tr>
+			</table>
+		</section>
+		
+		
+	</main>
+	
+	<footer>
+		<section id="contacts">
+			<h3>&copy; Joseph Altareb 2025 All Rights Reserved. jaltareb@sfsu.edu </h3>
+		</section>
+	</footer>
 </body>
 </html>
