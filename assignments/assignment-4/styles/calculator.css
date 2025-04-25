@@ -1,14 +1,82 @@
+/*calculator.css */
+:root {
+    --primary-color: black;
+    --secondary-color: #ffa500;
+    --text-color: white;
+    --spacing-unit: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-color:var(--primary-color);
+	color: var(--text-color);
+}
+
+/* pseudo-display for operations and answers*/
+.screen {
+	display: flex;
+	justify-content: right;
+    align-items: center;
+}
+
+#prevOperation {
+	position: absolute;
+	font-size: 25px;
+	top: 9%;
+}
+#output {
+	position: absolute;
+	top: 30%;
+	font-size: 30px;
+}
+
+/* button layout*/
+
+.operator {
+	background-color: var(--secondary-color) !important;
+}
+
+.toprow {
+	background-color: grey !important; 
+}
+
+.operator:hover, .toprow:hover, .buttons div:hover  {
+    background-color: lightgray !important;
+    cursor: pointer;
+}
+.operator:active, .toprow:active, .buttons div:active  {
+    background-color: white !important;
+    cursor: pointer;
+}
+
 .buttons {
 	display: inline-grid;
+	align-items: center;
+	position: absolute;
 	grid-template-columns: auto auto auto auto;
-	/* background-color: dodgerblue;
-	padding: 10px; */
+	width: 100%;
+	top: 40%;
+	height: 60%;
+
 }
 
 .buttons div {
-	/*background-color: #f1f1f1;
-	border: 1px solid black; */
-	padding: 20px;
+	/*padding: 20px;*/
+	position: relative;
+	display: flex;
 	font-size: 30px;
 	text-align: center;
+	width: 90%;
+	left: 5%;
+	background-color: darkgray;
+	border: 2px hidden;
+	border-radius: 8px;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
 }
