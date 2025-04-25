@@ -116,6 +116,26 @@ const updateOperation = (x) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 	
+	let defaultTheme = document.getElementById('default');
+	let lightTheme = document.getElementById('light');
+	let colorfulTheme = document.getElementById('colorful');
+	
+	defaultTheme.addEventListener('click', () => {
+		document.body.style.setProperty("--primary-color", "black");
+		document.body.style.setProperty("--secondary-color", "#ffa500");
+		document.body.style.setProperty("--text-color", "white");
+	});
+	lightTheme.addEventListener('click', () => {
+		document.body.style.setProperty("--primary-color", "white");
+		document.body.style.setProperty("--secondary-color", "#ffa500");
+		document.body.style.setProperty("--text-color", "black");
+	});
+	colorfulTheme.addEventListener('click', () => {
+		document.body.style.setProperty("--primary-color", "linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet)");
+		document.body.style.setProperty("--secondary-color", "#ffa500");
+		document.body.style.setProperty("--text-color", "black");
+	});
+	
 	let numsAndOperators = nums.concat(operators);
 	numsAndOperators.forEach(id => {
 		let element = document.getElementById(id);

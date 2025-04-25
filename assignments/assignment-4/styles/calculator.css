@@ -18,8 +18,9 @@ a {
 }
 
 body {
-	background-color:var(--primary-color);
+	background:var(--primary-color);
 	color: var(--text-color);
+	height: 100vh;
 }
 
 /* pseudo-display for operations and answers*/
@@ -43,19 +44,19 @@ body {
 /* button layout*/
 
 .operator {
-	background-color: var(--secondary-color) !important;
+	background: var(--secondary-color) !important;
 }
 
 .toprow {
-	background-color: grey !important; 
+	background: grey !important; 
 }
 
 .operator:hover, .toprow:hover, .buttons div:hover  {
-    background-color: lightgray !important;
+    background: lightgray !important;
     cursor: pointer;
 }
 .operator:active, .toprow:active, .buttons div:active  {
-    background-color: white !important;
+    background: white !important;
     cursor: pointer;
 }
 
@@ -78,7 +79,7 @@ body {
 	text-align: center;
 	width: 90%;
 	left: 5%;
-	background-color: darkgray;
+	background: darkgray;
 	border: 2px hidden;
 	border-radius: 8px;
 	justify-content: center;
