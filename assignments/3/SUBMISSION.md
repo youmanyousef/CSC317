@@ -15,11 +15,15 @@
 ## Group Analysis (250-500 words)
 [Write a collaborative analysis comparing the different approaches. Each member should contribute to this section.]
 
+While working with each other we weren't always on the same page, for the most part we were unsure on what exactly we wanted and how we wanted it to look. The three different approaches while done in different orders helped inspire us on what we should do so we would all feel satisfied with our final results. We felt that the hand-written version gave us the most control where we could decide exactly what it is we wanted. It allowed us to design each section exactly how we imagined it and ensure everything matched the design we came up with. However this freedom we got was the most time-consuming of all the approaches as we had to manually change every detail to fit what we wanted. The AI generated one allowed us to get ideas quickly and experiment with different styles. While the AI was fast it was not always precise. This caused us to be left with a code that could use more, or had too much. For the price of that freedom we get from the hand-written approach, we get quick ideas. Unfortunately it would still need a human touch to make it fit our visions. The Hybrid combined the best parts of both approaches. We were able to use the quick ideas from the AI, and refine them manually to keep them consistent with what we wanted. This approach balanced creativity and structure together. While AI can help us gain inspiration and speed up the process, hand-written code is still important to ensure quality, accuracy and keeping the final design balanced.
+
 
 ## Individual Reflections
 
 ### [Member 1 Name] - Hand-written CSS (Part 1)
 [Individual reflection on lessons learned and contribution to hand-written CSS]
+
+While working on the hand-written section I had to take into consideration what my teammates might do, or what they might want to change. Because of this, I tried to keep the layout simple enough that it would be easy to change to match with the rest of the team. I learned how if I'm not a team player while thinking of what to do, it won't affect just me but my teammates as well. Everything needed to be kept flexible enough to change afterwards, nothing was set in stone until the final product. I tried experimenting with some hover animations, and ended up making a sort of "buzz-out" effect on the buttons. Overall, this helped me get a bit more comfortable writing out CSS from scratch and helping me memorize some stuff.
 
 ### [Member 2 Name] - Hand-written CSS (Part 2)
 [Individual reflection on lessons learned and contribution to hand-written CSS]
