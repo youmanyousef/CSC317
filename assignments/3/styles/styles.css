@@ -1,25 +1,36 @@
 /* styles.css 
  * Group 2: Aldo, David, Exabiier, Joseph
  */
+ 
+/* Root variables and themes */
+:root {
+	
+	--primary-color: #FF9A00;
+	--secondary-color: #4F200D;
+	--background-color: #FFD93D;
+	--heading-font: 'Verdana', sans-serif;
+	--body-font: 'Georgia', serif;
+	/* --padding-standard: ;
+	 * --border-standard: ;
+
+	 */
+}
 
 /* Clear all defaults */
 body {
 	margin: 0;
 	padding: 0;
+	background: var(--background-color);
+	font-family: var(--body-font);
 }
-/* Root variables and themes */
-:root {
-	/*
-	 * --primary-color: ;
-	 * --secondary-color: ;
-	 * --padding-standard: ;
-	 * --border-standard: ;
-	 * --heading-font: ;
-	 * --body-font: ;
-	 */
+
+h1,h2,h3 {
+	font-family: var(--heading-font);
 }
+
 /* Navigation bar styles */
 .nav-container {
+	background: var(--primary-color);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -39,9 +50,16 @@ body {
 
 /* Section styles */
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
 /* Footer styles*/
 footer {
-	background-color: black;
+	background-color: var(--secondary-color);
 	color: white;
 	text-align: center;
 	padding: 1.25rem 1rem;
