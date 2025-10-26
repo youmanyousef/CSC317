@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<title>Joseph's Portfolio</title>
-		<link rel="stylesheet" href="styles/styles.css">
+		<link id="css-theme" rel="stylesheet" href="styles/styles.css">
+
 	</head>
 	<body>
 		<header>
@@ -18,6 +19,20 @@
 			</section>
 		</header>
 		<main>
+
+			<!-- Theme Switcher -->
+			<div class="theme-switcher">
+    		<h3>Theme Switcher</h3>
+    			<div class="theme-buttons">
+        			<button class="theme-button active" data-theme="styles">Hand-Written</button>
+        			<button class="theme-button" data-theme="ai-1">AI 1</button>
+        			<button class="theme-button" data-theme="ai-2">AI 2</button>
+        			<button class="theme-button" data-theme="ai-3">AI 3</button>
+        			<button class="theme-button" data-theme="ai-4">AI 4</button>
+        			<button class="theme-button" data-theme="hybrid">Hybrid</button>
+    			</div>
+			</div>
+
 			<section id="about">
 				<h2>About me</h2>
 				<p>My name is Joseph Altareb, and I'm a Student @ SFSU. I am studying Computer Science. This subject has captivated me since an early age and I've been blessed to be around computers and had the green light to tinker and experiment with the devices around me. <br>
@@ -77,5 +92,6 @@
 				<span>&copy; Joseph Altareb, 2025.</span>
 			</section>
 		</footer>
+		<script src="scripts/switcher.js"></script>
 	</body>
 </html>
