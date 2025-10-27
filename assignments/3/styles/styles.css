@@ -4,39 +4,34 @@
  
 /* Root variables and themes */
 :root {
-	
-	--primary-color: #FF9A00;
+	--primary-color: #FFD93D;
 	--secondary-color: #4F200D;
-	--background-color: #FFD93D;
+	--background-color: #FF9A00;
 	--heading-font: 'Verdana', sans-serif;
 	--body-font: 'Georgia', serif;
-	/* --padding-standard: ;
-	 * --border-standard: ;
-
-	 */
+	--border-standard: 40px;
 }
 
 /* Clear all defaults */
-body {
+body,button {
 	margin: 0;
 	padding: 0;
 	background: var(--background-color);
 	font-family: var(--body-font);
+} 
+
+a,a:visited {
+	color: blue;
+	text-decoration: none;
 }
 
-#about{ 
-    background-color: var(--background-color);
-    display: flex;              
-    justify-content: space-between;          
-    flex-direction: column;
-    border-radius: 15px;
-    padding: 1rem 2rem;
-    font-size: 16px;
-}
-
-#about h2{
-    font-family: var(--heading-font);
-    
+button {
+	background:none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 h1,h2,h3 {
@@ -44,32 +39,181 @@ h1,h2,h3 {
 }
 
 /* Navigation bar styles */
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
 .nav-container {
-	background: var(--primary-color);
+	background: var(--secondary-color);
+	flex-wrap: wrap;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 2rem;
+	
 }
 
 .nav-links {
 	display: flex;
-	gap: 2rem;
+	gap: 2rem;	
+}
+
+.nav-links a, .nav-icon {
+	color: white;
+	/* height: 20px; */
 }
 
 .nav-logo svg {
 	width: auto;
 	height: 40px;
 }
+
+.nav-icon {
+	font-size: 2rem;
+	position: relative;
+	/* transform: translateY(-10px); */
+	display: none;
+}
 /* Header styles */
+header {
+	margin-top: 6rem;
+}
+header section {
+	padding-top: 1rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+img {
+	width: 30%;
+	border: 2px solid;
+	box-shadow: 0 0 7px 2px var(--secondary-color);
+	border-color: var(--secondary-color);
+	border-radius: var(--border-standard);
+}
+/* come back */
+#about{ 
+	flex-basis: 95%;
+    background-color: var(--primary-color);
+    display: flex;              
+    justify-content: space-between;          
+    flex-direction: column;
+    border-radius: var(--border-standard);
+    padding: 1rem 2rem;
+    
+}
+
+#about h2{
+    font-family: var(--heading-font);
+    
+}
+
+/* Theme Switcher sytle */
+.theme-switcher {
+	display: flex;
+	background: var(--secondary-color);
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border-radius: var(--border-standard);
+	border: 2px solid;
+	padding-left: 1rem;
+	margin: 1px;
+	overflow: hidden;
+}
+.theme-switcher h3 {
+	color: white;
+}
+.theme-buttons {
+	display: flex;
+}
+.theme-button {
+	background: var(--background-color);
+	border-radius: 2px;
+	padding: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.active {
+	background: var(--primary-color);
+}
+
 
 /* Section styles */
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+main section {
+	flex-basis: 45%;
+	background: var(--primary-color);
+	border: 2px solid;
+	box-shadow: 0 0 7px 2px var(--secondary-color);
+	border-color: var(--secondary-color);
+	border-radius: var(--border-standard);
+	padding: 0.2rem 1rem;
+	margin: 0.5rem;
 	
+}
+
+
+
+ul {
+	list-style-type: square;
+	
+}
+li::marker {
+	color: var(--secondary-color);
+	content: "\27A4";
+}
+li ul li::marker {
+	content: "\21B3";
+}
+
+/* Responsive Queries */
+@media (min-width: 1050px) {
+	.theme-switcher {
+		display: flex;
+	}
+}
+@media (max-width: 1050px) {
+	html {
+		font-size: 40px;
+	}
+	main section {
+		flex-basis: 95%;
+	}
+	img {
+		width: 50%;
+	}
+	/* Navbar */
+	.theme-switcher {
+		display: none;
+	}
+	.theme-switcher.responsive {
+		display: flex;
+	}
+	.nav-links {
+		display: none;
+	}
+	.nav-container.responsive .nav-links {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		width: 100%;
+	}
+	.nav-icon {
+		display: block;
+		position: absolute;
+		right: 1rem;
+		top: 0.2rem;
+	}
 }
 
 /* Footer styles*/
@@ -126,28 +270,3 @@ footer span {
   90% { transform: translateX(0);}
   100%{ transform: scale(2.25);}
 }
-
-@media (min-width: 1025px) {
-        #about {
-            font-size: 2.75em;
-        }
-}
-
-@media (max-width: 1024px) {
-        #about {
-            font-size: 2em;
-    
-        }
-    }
-
-    @media (max-width: 768px) {
-        #about {
-            font-size: 1.75em;
-        }   
-    }
-
-    @media (max-width: 640px) {
-        #about {
-            font-size: 1em;
-        }
-    }
