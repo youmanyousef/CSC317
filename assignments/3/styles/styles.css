@@ -24,6 +24,21 @@ body {
 	font-family: var(--body-font);
 }
 
+#about{ 
+    background-color: var(--background-color);
+    display: flex;              
+    justify-content: space-between;          
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    font-size: 16px;
+}
+
+#about h2{
+    font-family: var(--heading-font);
+    
+}
+
 h1,h2,h3 {
 	font-family: var(--heading-font);
 }
@@ -111,3 +126,28 @@ footer span {
   90% { transform: translateX(0);}
   100%{ transform: scale(2.25);}
 }
+
+@media (min-width: 1025px) {
+        #about {
+            font-size: 2.75em;
+        }
+}
+
+@media (max-width: 1024px) {
+        #about {
+            font-size: 2em;
+    
+        }
+    }
+
+    @media (max-width: 768px) {
+        #about {
+            font-size: 1.75em;
+        }   
+    }
+
+    @media (max-width: 640px) {
+        #about {
+            font-size: 1em;
+        }
+    }
