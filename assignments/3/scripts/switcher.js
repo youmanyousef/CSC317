@@ -27,6 +27,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		// Update stylesheet href
 		themeStylesheet.href = `styles/${themeName}.css`;
 
+		// Update profile image for ai-4 theme
+		const profileImg = document.querySelector('#home img');
+		if (profileImg) {
+			if (themeName === 'ai-4') {
+				profileImg.src = './images/Gemini_Generated_Image_j5lo2sj5lo2sj5lo.png';
+			} else {
+				profileImg.src = './images/profile.jpg';
+			}
+		}
 
 		// Update active button state
 		themeButtons.forEach(button => {
