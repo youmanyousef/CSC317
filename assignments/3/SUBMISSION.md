@@ -3,7 +3,7 @@
 **Group Members:**
 - [Joseph Altareb] - [Student ID] - [youmanyousef]
 - [Exabiier Bars] - [Student ID] - [GitHub Username]
-- [Aldo Navarro] - [Student ID] - [GitHub Username]
+- [Aldo Navarro] - [920102739] - [Aldo-N]
 - [David Soto] - [921288482] - [Daso4]
 
 **Elected Submitter:** [Name and GitHub username]
@@ -25,8 +25,10 @@ While working with each other we weren't always on the same page, for the most p
 
 While working on the hand-written section I had to take into consideration what my teammates might do, or what they might want to change. Because of this, I tried to keep the layout simple enough that it would be easy to change to match with the rest of the team. I learned how if I'm not a team player while thinking of what to do, it won't affect just me but my teammates as well. Everything needed to be kept flexible enough to change afterwards, nothing was set in stone until the final product. I tried experimenting with some hover animations, and ended up making a sort of "buzz-out" effect on the buttons. Overall, this helped me get a bit more comfortable writing out CSS from scratch and helping me memorize some stuff.
 
-### [Member 2 Name] - Hand-written CSS (Part 2)
+### [Aldo Navarro] - Hand-written CSS (Part 2)
 [Individual reflection on lessons learned and contribution to hand-written CSS]
+
+We learned that coordinating wasn't as simple as we thought it would be. While using discord does make contact easier our schedules conflicted. However, we all still came together to finish the project (which in truth we expected to turn in on sunday) and our communication has gotten better. The handwritten part was a bit of a challenge because when we started merging code we had different approaches to our designs. Plus, this was our first group project so we didn't even have prior experience working together. But I think that being able to see different styles helps us gain more perspective and will help us work together better in the future.
 
 ### [Member 3 Name] - AI Text Prompt CSS
 [Individual reflection on AI prompting experience and lessons learned]
