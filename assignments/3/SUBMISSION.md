@@ -2,7 +2,7 @@
 
 **Group Members:**
 - [Joseph Altareb] - 923634683 - [youmanyousef]
-- [Exabiier Bars] - [Student ID] - [GitHub Username]
+- [Exabiier Bars] - [923686540] - [exabiier]
 - [Aldo Navarro] - [920102739] - [Aldo-N]
 - [David Soto] - [921288482] - [Daso4]
 
@@ -37,9 +37,12 @@ We learned how you have to be very specific with what you want if you use an AI 
 specific enough, the AI will just go off and do what it "thinks" you might want, which can end up something completely different. Being descriptive with what you want and how you want it makes a big difference as the AI will otherwise add a bunch
 of unnecessary effects or code. While AI is effective at generating an idea quickly, it will still require a humans creative touch to refine ad adjust the results. This helped us understand how important clear communication is when working with AI tools and in general.
 
-### [Member 4 Name] - AI Image+Text Prompt CSS (if applicable)
+### [Exabiier Bars] - AI Image+Text Prompt CSS (if applicable)
 [Individual reflection on AI prompting with images and lessons learned]
 
+In the AI 4 css, I went ahead and tried out google gemini nano banana. I tried to use it to change the styling of the original photo. The process was hard and did not turn out exactly as planned. The problem I think is that I did not have enough photos for the asi to be able to process the photo and make it look like my classmate. If I would have gotten more photos of him, I think we would have had a better result for the photo.
+
+For the CSS AI prompt, I would go into full detail on what I wanted for the webpage. Since I couldn’t change the html, it was hard to get the exact styling I wanted and get something that was more presentable. The more detailed i was with the ai, and the more specific i became the more better it became in making the webpage I wanted. 
 
 ## Group Preferred Version
 [Explain which version the group prefers and why - this should be a consensus decision]
