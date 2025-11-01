@@ -1,12 +1,12 @@
 # CSC 317 Assignment 3 Group Submission
 
 **Group Members:**
-- [Joseph Altareb] - [Student ID] - [youmanyousef]
+- [Joseph Altareb] - 923634683 - [youmanyousef]
 - [Exabiier Bars] - [Student ID] - [GitHub Username]
 - [Aldo Navarro] - [920102739] - [Aldo-N]
 - [David Soto] - [921288482] - [Daso4]
 
-**Elected Submitter:** [Name and GitHub username]
+**Elected Submitter:** Joseph A - youmanyousef
 **Repository Link:** https://github.com/youmanyousef/CSC317/tree/main/assignments/3
 
 
@@ -43,7 +43,7 @@ of unnecessary effects or code. While AI is effective at generating an idea quic
 
 ## Group Preferred Version
 [Explain which version the group prefers and why - this should be a consensus decision]
-
+The hybrid version is probably the best version because it encorporates features that we otherwise would not have thought about in our design. The AI is trained on all the best websites on the net, so while its possible that it wasn't told all the details that were in our handwritten version, it guessed based on its training data what the website would look like in filled in the gaps. We incorporated a lot of theming elements from the AI CSS files.
 
 ## Collaboration Experience
 [Describe how the group worked together, challenges faced, and lessons learned about teamwork]
