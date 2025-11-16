@@ -11,23 +11,47 @@ const operatorsAsString = ["", "±","%","÷","×","−","+","."]
 
 const isDecValidNumber = (str) => {
 	let tempNum = Number(str);
-	console.log(tempNum);
 	if ((tempNum !== tempNum)) {
 		return false;
 	}
 	return true;
 }
 
-const calculateAnswer = (list) => {
-	//
+const calculateAnswer = () => {
+	const operators = {
+		"plus": "+",
+		"sub": "-",
+		"mul": "*",
+		"div": "/"
+	};
+	let expression = "";
+	for (let item of operationList) {
+		if (operators[item]) {
+			expression += ` ${operators[item]} `;
+		} else {
+			expression += item;
+		}
+	}
+	try {
+		return eval(expression);
+	} catch (e) {
+		console.error("Invalid expression:", expression);
+		return null;
+	}
+}
+
+const clearAll = () => {
+	operation = "";
+	operationList = [];
+	prevOperation = "";
+	currentNumber = "";
+	prevOutput = "";
 }
 
 const updateOperation = (x) => {
-	//console.log(x);
 	if (nums.includes(x)) {
 		let numsIndex = nums.indexOf(x);
 		currentNumber = currentNumber.concat(numsAsString[numsIndex]);
-		console.log(currentNumber);
 		genOutput();
 		
 	} else if (operators.includes(x)) {
@@ -36,16 +60,14 @@ const updateOperation = (x) => {
 			return;
 		}
 		if (x === "equ") {
-			//
+			operationList.push(currentNumber);
+			output = calculateAnswer();
+			clearAll();
 			return;
 		} 
 		switch (x) {
 			case "AC":
-				console.log('hi');
-				operation = "";
-				operationList = [];
-				prevOperation = "";
-				currentNumber = "";
+				clearAll();
 				break;
 			case "neg":
 				if (currentNumber.charAt(0) !== "-") {
@@ -61,12 +83,12 @@ const updateOperation = (x) => {
 				/* if (operators.includes(operationList.at(-1))) {
 					operationList.pop();
 					operationList.push(x);
-				} else  */if (operationList === []) {
+				} else  */
+				if (operationList === []) {
 					return;
 				} else {
 					operationList.push(currentNumber);
 					operationList.push(x);
-					console.log("tryign to clear number");
 					currentNumber = "";
 				}
 				break;
@@ -85,11 +107,8 @@ const updateOperation = (x) => {
 			case "dzero":
 				currentNumber += "00";
 				break;
-			case "equ":
-				break;
 		}
 		genPrevOutput();
-		console.log(operationList);
 	} else {
 		console.log('Invalid input!');
 	}
@@ -105,7 +124,6 @@ const genPrevOutput = () => {
 			prevOutput = prevOutput.concat(operatorsAsString[oprIndex]+' ');
 			
 		} else {
-			console.log("hii");
 			prevOutput = prevOutput.concat(opr+' ');
 		}
 	});
@@ -119,7 +137,6 @@ const updateScreen = () => {
 	let screenPrevOperation = document.getElementById("prevOutput");
 	let screenOutput = document.getElementById("output");
 	screenOutput.innerHTML = output;
-	console.log(`output is ${prevOutput}`);
 	screenPrevOperation.innerHTML = prevOutput;
 }
 setInterval(updateScreen, 100);
