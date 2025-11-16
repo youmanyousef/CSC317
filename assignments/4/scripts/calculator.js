@@ -28,6 +28,7 @@ const updateOperation = (x) => {
 		let numsIndex = nums.indexOf(x);
 		currentNumber = currentNumber.concat(numsAsString[numsIndex]);
 		console.log(currentNumber);
+		genOutput();
 		
 	} else if (operators.includes(x)) {
 		let operatorsIndex = operators.indexOf(x);
@@ -40,6 +41,7 @@ const updateOperation = (x) => {
 		} 
 		switch (x) {
 			case "AC":
+				console.log('hi');
 				operation = "";
 				operationList = [];
 				prevOperation = "";
@@ -83,12 +85,44 @@ const updateOperation = (x) => {
 			case "dzero":
 				currentNumber += "00";
 				break;
+			case "equ":
+				break;
 		}
+		genPrevOutput();
 		console.log(operationList);
 	} else {
 		console.log('Invalid input!');
 	}
 }
+
+const genPrevOutput = () => {
+	prevOutput = "";
+	operationList.forEach(opr =>{
+		
+		if (operators.includes(opr)) {
+			
+			oprIndex = operators.indexOf(opr);
+			prevOutput = prevOutput.concat(operatorsAsString[oprIndex]+' ');
+			
+		} else {
+			console.log("hii");
+			prevOutput = prevOutput.concat(opr+' ');
+		}
+	});
+}
+
+const genOutput = () => {
+	output = currentNumber;
+}
+
+const updateScreen = () => {
+	let screenPrevOperation = document.getElementById("prevOutput");
+	let screenOutput = document.getElementById("output");
+	screenOutput.innerHTML = output;
+	console.log(`output is ${prevOutput}`);
+	screenPrevOperation.innerHTML = prevOutput;
+}
+setInterval(updateScreen, 100);
 
 document.addEventListener("DOMContentLoaded", () => {
 	
