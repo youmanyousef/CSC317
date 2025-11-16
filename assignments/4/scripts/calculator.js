@@ -1,4 +1,5 @@
 let operation = ""
+let currentNumber = "";
 let output = ""
 let prevOperation = ""
 let prevOutput = ""
@@ -8,12 +9,85 @@ let operationList = []
 const operators = ["AC", "neg", "pct", "div", "mul", "sub", "plus", "dec", "dzero", "equ"];
 const operatorsAsString = ["", "±","%","÷","×","−","+","."]
 
+const isDecValidNumber = (str) => {
+	let tempNum = Number(str);
+	console.log(tempNum);
+	if ((tempNum !== tempNum)) {
+		return false;
+	}
+	return true;
+}
+
 const calculateAnswer = (list) => {
 	//
 }
 
 const updateOperation = (x) => {
-	console.log(x);
+	//console.log(x);
+	if (nums.includes(x)) {
+		let numsIndex = nums.indexOf(x);
+		currentNumber = currentNumber.concat(numsAsString[numsIndex]);
+		console.log(currentNumber);
+		
+	} else if (operators.includes(x)) {
+		let operatorsIndex = operators.indexOf(x);
+		if (currentNumber === "") {
+			return;
+		}
+		if (x === "equ") {
+			//
+			return;
+		} 
+		switch (x) {
+			case "AC":
+				operation = "";
+				operationList = [];
+				prevOperation = "";
+				currentNumber = "";
+				break;
+			case "neg":
+				if (currentNumber.charAt(0) !== "-") {
+					currentNumber = "-" + currentNumber;
+				} else {
+					currentNumber = currentNumber.slice(1, currentNumber.length);
+				}
+				break;
+			case "div":
+			case "mul":
+			case "sub":
+			case "plus":
+				/* if (operators.includes(operationList.at(-1))) {
+					operationList.pop();
+					operationList.push(x);
+				} else  */if (operationList === []) {
+					return;
+				} else {
+					operationList.push(currentNumber);
+					operationList.push(x);
+					console.log("tryign to clear number");
+					currentNumber = "";
+				}
+				break;
+			case "dec":
+				
+				if (isDecValidNumber(currentNumber.concat('.0'))) {
+					currentNumber = currentNumber.concat('.')
+				}
+				
+				break;
+			case "pct":
+				let parsedCurrentNumber = Number(currentNumber);
+				parsedCurrentNumber /= 100;
+				currentNumber = String(parsedCurrentNumber);
+				break;
+			case "dzero":
+				currentNumber += "00";
+				break;
+		}
+		console.log(operationList);
+	} else {
+		console.log('Invalid input!');
+	}
 }
 
 document.addEventListener("DOMContentLoaded", () => {
