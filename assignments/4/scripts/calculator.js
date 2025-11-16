@@ -5,9 +5,9 @@ let prevOperation = ""
 let prevOutput = ""
 const nums = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 const numsAsString = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-let operationList = []
+let operationList = [];
 const operators = ["AC", "neg", "pct", "div", "mul", "sub", "plus", "dec", "dzero", "equ"];
-const operatorsAsString = ["", "±","%","÷","×","−","+","."]
+const operatorsAsString = ["", "±","%","÷","×","−","+","."];
 
 const isDecValidNumber = (str) => {
 	let tempNum = Number(str);
