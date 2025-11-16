@@ -68,6 +68,7 @@ const updateOperation = (x) => {
 		switch (x) {
 			case "AC":
 				clearAll();
+				output = "";
 				break;
 			case "neg":
 				if (currentNumber.charAt(0) !== "-") {
