@@ -12,7 +12,7 @@
 ## Work Distribution
 - Hand-written CSS (Collaborative): 
   - Joseph A: Header and Navbar CSS
-  - Exabiier B:  
+  - Exabiier B: 
   - Aldo N: 
   - David S: 
 - AI Text Prompt CSS: ALL
